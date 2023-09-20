@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-s5pd
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/ci10t-777-0039-tenant/ci10t-777-0039-app/devfile-sample-s5pd@sha256:5ec10fa698f0fc63045d9ed4f96b097809e9b2d28a4b20473b84d9098c8b3c67
+        name: my-nodejs
+        resources: {}
+status: {}
